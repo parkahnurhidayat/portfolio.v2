@@ -1,9 +1,19 @@
-import HomePage from "./dashboard/home/page";
+"use client";
+
+import PraticleBg from "./components/PraticleBg";
+import DashboardPage from "./dashboard/page";
+
+
+ 
 
 export default function Home() {
   return (
+    
    <main>
-    <HomePage/>
+    <PraticleBg/>
+    <DashboardPage/>
+   
    </main>
   )
 }
+

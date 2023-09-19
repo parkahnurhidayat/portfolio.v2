@@ -21,16 +21,12 @@ export default function RootLayout({
     <html lang="en">
       <head><link rel="icon" href="/profile/profile2.png" sizes="any" /></head>
       <body className={inter.className}>
-           <NavbarPage/>
-        <section className='mx-auto lg:flex'>
-          <header className="ml-5 xl:ml-32 2xl:ml-64">
-           <SidebarPageView />
-          </header>
+       
 
-        <main className=" w-full px-10 xl:pr-8 lg:pl-0 2xl:pr-64 p-4 lg:ml-5 sm:mt-10">
+        <main className='mx-auto'>
           {children}
         </main>
-        </section>
+      
       </body>
     </html>
   )

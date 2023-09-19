@@ -8,7 +8,7 @@ const SidebarPageView =()=>{
     const linkStyle ="flex scale-95 items-center px-4 py-1 group rounded-xl hover:bg-slate-100  hover:shadow-md link hover:scale-105 transition-all duration-500"
     const linkStyleActive = linkStyle + " active "
     return(   
-        <aside className="container sticky lg:block hidden overflow-hidden left-10 top-0 z-40 w-72 h-screen transition-transform -x-translate-x-full">
+        <aside data-aos="fade-down" className="container sticky lg:block hidden overflow-hidden left-10 top-0 z-40 w-72 h-screen transition-transform -x-translate-x-full">
         <div className="h-full px-2 pt-20 overflow-y-auto ">
             <div className="flex flex-col pb-10 px-4 ">
               <Image className="w-28 h-28 mb-3 rounded-full shadow-lg bg-top object-cover " src='/profile/profile2.png' alt="Profile" width={100} height={100} />
