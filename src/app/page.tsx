@@ -1,5 +1,4 @@
 "use client";
-
 import PraticleBg from "./components/PraticleBg";
 import DashboardPage from "./dashboard/page";
 
