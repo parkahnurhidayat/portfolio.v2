@@ -7,9 +7,9 @@ const DashboardPage = () => {
 
     return (
         <div id="home">
-            <div className="flex justify-center items-center min-h-screen text-white flex-col">
+            <div className="flex px-10 justify-center items-center min-h-screen text-white flex-col">
                 <div className="flex flex-col items-center">
-                    <Image className="rounded-full" alt="profile" width={300} height={300} src="/profile/profile2.png" /><h1 className="text-4xl pt-5 font-bold">Hi,My name iS Parkah Nurhidayat </h1>
+                    <Image className="rounded-full" alt="profile" width={300} height={300} src="/profile/profile2.png" /><h1 className="text-2xl pt-5 text-center lg:text-4xl font-bold">Hi,My name is Parkah Nurhidayat </h1>
                     <p className="text-slate-500">I am a Frontend Developer</p>
                     <p className="text-slate-500">welcome to my personal website</p>
                 </div>
