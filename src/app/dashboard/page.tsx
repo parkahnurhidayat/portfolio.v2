@@ -21,20 +21,20 @@ const DashboardPage = () => {
     return (
         <div id="home">
             <div className="flex px-10 justify-center items-center min-h-screen text-white flex-col ">
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center ">
                     <Image className="rounded-full" alt="profile" width={300} height={300} src="/profile/profile2.png" /><h1 className="text-3xl  text-center lg:text-4xl font-bold"><span className="text-xl xl:text-2xl text-cyan-400">
                         Hello everyone, me
                     </span><br />
                         </h1>
                         <div className="wrapper w-full xl:pt-1">
-                            <svg>
+                            <svg className=" xl:w-[800px]">
                                 <text className="text-4xl xl:text-5xl  text-center w-full" x="50%" y="50%"  text-anchor="middle">
                                     Parkah Nurhidayat
                                 </text>
                             </svg>
                         </div>
 
-                    <p className="text-slate-400 italic text-xl text-center"> <TypeIt
+                    <p className="text-slate-400 italic  text-xl text-center"> <TypeIt
                         getBeforeInit={(instance) => {
                             instance
                                 .pause(400)
@@ -45,7 +45,9 @@ const DashboardPage = () => {
                                 .type("<span class='text-cyan-400' >Frontend Developer</span>")
                                 .pause(500)
                                 .type('<br>')
-                                .type("Welcome to my personal website...")
+                                .type("Welcome to my personal")
+                                .type('<br>')
+                                .type('website...')
 
 
 
