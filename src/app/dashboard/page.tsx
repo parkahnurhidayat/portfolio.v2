@@ -1,19 +1,68 @@
-
+"use client"
 import Image from "next/image"
 import Link from "next/link"
+import TypeIt from "typeit-react";
+import { useState, useEffect } from "react"
+import { IconArrowBigRightLine } from "@tabler/icons-react";
 
 
 const DashboardPage = () => {
+    const [render, setRender] = useState(false)
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setRender(true)
+        }, 11500);
+
+        return () => clearTimeout(timer);
+
+    }, [])
 
     return (
         <div id="home">
-            <div className="flex px-10 justify-center items-center min-h-screen text-white flex-col">
+            <div className="flex px-10 justify-center items-center min-h-screen text-white flex-col ">
                 <div className="flex flex-col items-center">
-                    <Image className="rounded-full" alt="profile" width={300} height={300} src="/profile/profile2.png" /><h1 className="text-2xl pt-5 text-center lg:text-4xl font-bold">Hi,My name is Parkah Nurhidayat </h1>
-                    <p className="text-slate-500">I am a Frontend Developer</p>
-                    <p className="text-slate-500">welcome to my personal website</p>
+                    <Image className="rounded-full" alt="profile" width={300} height={300} src="/profile/profile2.png" /><h1 className="text-3xl  text-center lg:text-4xl font-bold"><span className="text-xl xl:text-2xl text-cyan-400">
+                        Hello everyone, me
+                    </span><br />
+                        </h1>
+                        <div className="wrapper w-full xl:pt-1">
+                            <svg>
+                                <text className="text-4xl xl:text-5xl  text-center w-full" x="50%" y="50%"  text-anchor="middle">
+                                    Parkah Nurhidayat
+                                </text>
+                            </svg>
+                        </div>
+
+                    <p className="text-slate-400 italic text-xl text-center"> <TypeIt
+                        getBeforeInit={(instance) => {
+                            instance
+                                .pause(400)
+                                .type("Hi,I am <span class='text-red-500'> Student <span>")
+                                .pause(750)
+                                .delete(9)
+                                .pause(500)
+                                .type("<span class='text-cyan-400' >Frontend Developer</span>")
+                                .pause(500)
+                                .type('<br>')
+                                .type("Welcome to my personal website...")
+
+
+
+                            // Remember to return it!
+                            return instance;
+
+                        }}
+                    /></p>
+
                 </div>
-                <div className="my-5"><Link className="text-2xl rounded-full hover:text-red-500  hover:ring-white hover:ring-2 px-4 py-1 text-white" href={"/dashboard/home"}>Let's Start</Link></div>
+
+                <div className="my-5">
+                    {render &&
+                        <Link id="let" className="text-2xl rounded-full flex items-center gap-x-2 hover:ring-white hover:ring-2 px-4 py-1 text-white" href={"/dashboard/home"}>Let's Start <IconArrowBigRightLine
+                            id="element" className="animate-bounce w-4 " /> </Link>}
+                </div>
+
             </div>
         </div>
     )

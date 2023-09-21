@@ -1,37 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.active{ 
-    transform: scale(1.05);
-    color:black;
-    @apply bg-slate-100
-    opacity-100 shadow-md
+.active {
+  transform: scale(1.05);
+  color: black;
+  @apply bg-slate-100
+    opacity-100 shadow-md;
 }
 
-.active-mobile{ 
-    @apply bg-slate-100
-    
+.active-mobile {
+  @apply bg-slate-100;
 }
 
-#home{
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUpAnimation 2.5s ease-in-out forwards;
+#home {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpAnimation 2.5s ease-in-out forwards;
 }
 
 @keyframes fadeUpAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(150px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+#let {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpAnimation 2.5s ease-in-out forwards;
+}
+
+@keyframes fadeUpAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#element {
+  
+  animation: shake 3s ease infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+svg {
+  font-family: "poppins", sans-serif;
+  width: 800px;
+  height: 70px;
+}
+svg text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #13b9da;
+  
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(19, 185, 218, 0);
+    stroke: white;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(19, 185, 218, 0);
+    stroke: white;
+  }
+  80% {
+    fill: rgba(19, 185, 218, 0);
+    stroke: white;
+    stroke-width: 3;
+  }
+  100% {
+    fill: white;
+    stroke: rgba(19, 185, 218, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+
