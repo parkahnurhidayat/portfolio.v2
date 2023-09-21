@@ -21,7 +21,7 @@ const NavbarPageView = () => {
  }
   return (
    
-<nav className="border-b backdrop-blur-md bg-transparent lg:hidden"> 
+<nav data-aos="fade-down-right" className="border-b backdrop-blur-md bg-transparent lg:hidden"> 
   <div className="max-w-screen-xl flex flex-wrap items-center  justify-between mx-auto p-3 lg:block lg:h-full lg:px-2 lg:pt-20 lg:w-full ">
     <a href="#" className="flex items-center px-4 ">
     <Image className="w-14 h-14 mb-2 mr-2 rounded-full border shadow-lg bg-top object-cover  " src='/profile/profile2.png' alt="Profile" width={100} height={100} />
