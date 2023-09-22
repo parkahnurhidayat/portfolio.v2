@@ -3,7 +3,8 @@ import Image from "next/image"
 import Link from "next/link"
 import TypeIt from "typeit-react";
 import { useState, useEffect } from "react"
-import { IconArrowBigRightLine } from "@tabler/icons-react";
+
+
 
 
 const DashboardPage = () => {
@@ -27,8 +28,8 @@ const DashboardPage = () => {
                     </span><br />
                         </h1>
                         <div className="wrapper w-full xl:pt-1">
-                            <svg className=" xl:w-[800px]">
-                                <text className="text-4xl xl:text-5xl  text-center w-full" x="50%" y="50%"  text-anchor="middle">
+                            <svg id="svgHome" className=" xl:w-[800px]">
+                                <text className="text-4xl xl:text-5xl font-primay text-center w-full" x="50%" y="50%"  text-anchor="middle">
                                     Parkah Nurhidayat
                                 </text>
                             </svg>
@@ -61,8 +62,7 @@ const DashboardPage = () => {
 
                 <div className="my-5">
                     {render &&
-                        <Link id="let" className="text-2xl rounded-full flex items-center gap-x-2 hover:ring-white hover:ring-2 px-4 py-1 text-white" href={"/dashboard/home"}>Let's Start <IconArrowBigRightLine
-                            id="element" className="animate-bounce w-4 " /> </Link>}
+                        <Link id="let" className="text-2xl hover:text-cyan-400 rounded-full flex items-center gap-x-2 px-7  text-white group" href={"/dashboard/home"}>Let's Start</Link>}
                 </div>
 
             </div>

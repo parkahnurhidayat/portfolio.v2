@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,7 +39,8 @@
 #let {
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeUpAnimation 2.5s ease-in-out forwards;
+  animation: fadeUpAnimation 1.5s ease-in-out forwards,tada 2s infinite;
+  
 }
 
 @keyframes fadeUpAnimation {
@@ -52,34 +54,37 @@
   }
 }
 
-#element {
-  
-  animation: shake 3s ease infinite;
-}
 
-@keyframes shake {
+
+@keyframes tada {
   0% {
-    transform: translateX(0);
+      transform: scale(1);
   }
-  25% {
-    transform: translateX(5px);
+  10%, 20% {
+      transform: scale(0.9) rotate(-4deg);
   }
-  50% {
-    transform: translateX(0);
+  30%, 50%, 70%, 90% {
+      transform: scale(1.1) rotate(4deg);
   }
-  75% {
-    transform: translateX(5px);
+  40%, 60%, 80% {
+      transform: scale(1.1) rotate(-4deg);
   }
   100% {
-    transform: translateX(0);
+      transform: scale(1) rotate(0deg);
   }
 }
 
 
-svg {
+#svgHome {
   font-family: "poppins", sans-serif;
-  width: 350px;
+  width: 300px;
   height: 70px;
+}
+@media screen and (min-width: 768px) {
+  #svgHome {
+      height: 100px; /* Mengubah tinggi elemen SVG menjadi 100px ketika layar lebih besar dari 768px */
+      width: 450px;
+  }
 }
 svg text {
   animation: stroke 5s infinite alternate;
@@ -87,10 +92,12 @@ svg text {
   stroke: #13b9da;
   
 }
+
+
 @keyframes stroke {
   0% {
     fill: rgba(19, 185, 218, 0);
-    stroke: white;
+    stroke:white;
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 50%;
     stroke-width: 2;
