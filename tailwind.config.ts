@@ -12,6 +12,20 @@ const config: Config = {
       padding:'16px',
     },
     extend: {
+      keyframes: {
+        slideInfinite: {
+          "0%": {  transform: 'translateX(0%)'},
+          "100%": {transform: 'translateX(-50%)'},
+        },
+        slideInfiniteReverse: {
+          "0%": {  transform: 'translateX(-50%)'},
+          "100%": {transform: 'translateX(0%)'},
+        },
+      },
+      animation: {
+        slide: 'slideInfinite 38s linear infinite',
+        slideReverse: 'slideInfiniteReverse 38s linear infinite',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -23,7 +37,7 @@ const config: Config = {
       screens:{
         '2xl':'1320px',
       }
-    },
+    }
   },
   plugins: [],
 }

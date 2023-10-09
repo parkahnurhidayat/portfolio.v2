@@ -15,7 +15,7 @@ export default function RootLayout({
            <SidebarPageView />
           </header>
 
-        <main className=" w-full px-10 xl:pr-8 lg:pl-0 2xl:pr-64 p-4 lg:ml-5 sm:mt-10">
+        <main className=" w-full  md:container xl:pr-8 lg:pl-0 2xl:pr-64 p-4 lg:ml-5 sm:mt-10">
           {children}
         </main>
         </section>

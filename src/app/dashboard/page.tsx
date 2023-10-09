@@ -4,9 +4,6 @@ import Link from "next/link"
 import TypeIt from "typeit-react";
 import { useState, useEffect } from "react"
 
-
-
-
 const DashboardPage = () => {
     const [render, setRender] = useState(false)
 
@@ -49,7 +46,6 @@ const DashboardPage = () => {
                                 .type("Welcome to my personal")
                                 .type('<br>')
                                 .type('website...')
-
 
 
                             // Remember to return it!
