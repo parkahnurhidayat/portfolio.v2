@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const data = async ()=>{
   try {
-    const blog = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`,{cache:"no-store"})
+    const blog = await fetch('http://localhost:3000/api/blog',{cache:"no-store"})
     return blog.json()
   } catch (error) {
     console.log(error)

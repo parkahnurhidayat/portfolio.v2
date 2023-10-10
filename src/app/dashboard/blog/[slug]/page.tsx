@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const BlogDetail = async (id: Number) => {
   try {
-    const data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}?id=${id}`, {
+    const data = await fetch(`http://localhost:3000/api/blog?id=${id}`, {
       cache: "no-store",
     });
     return data.json();
@@ -15,7 +15,7 @@ const BlogDetail = async (id: Number) => {
 
 const DetailBlog = async ({ params }: { params: { slug: string } }) => {
   const blogs = await BlogDetail(Number(params.slug));
-  console.log(blogs);
+  
 
   return (
     <div>
