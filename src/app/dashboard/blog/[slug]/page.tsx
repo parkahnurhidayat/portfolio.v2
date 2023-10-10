@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const BlogDetail = async (id: Number) => {
   try {
-    const data = await fetch(`http://localhost:3000/api/blog?id=${id}`, {
+    const data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/blog?id=${id}`, {
       cache: "no-store",
     });
     return data.json();
