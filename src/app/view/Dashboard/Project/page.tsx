@@ -9,7 +9,7 @@ const ProjectPageView = () => {
         <p className="text-slate-500 font-medium uppercase ">featuring all of my projects about technology</p>
       </div>
       <div className="flex flex-wrap gap-6 border-t py-10">
-        <div className="border cursor-pointer rounded-xl shadow-md lg:max-w-sm  hover:scale-90 transition-all duration-700 overflow-hidden group:">
+        <div className="border cursor-pointer rounded-xl shadow-md lg:max-w-sm  hover:scale-105 transition-all duration-700 overflow-hidden group:">
           <Link href={"https://parkah-portfolio.vercel.app/"} target="_blank">
 
             <Image src="/project/project1.png" className="w-full h-48 object-cover" alt="project1" width={1000} height={1000}  />
@@ -27,7 +27,7 @@ const ProjectPageView = () => {
 
           </Link>
         </div>
-        <div className="border cursor-pointer rounded-xl shadow-md lg:max-w-sm  hover:scale-90 transition-all duration-700 overflow-hidden">
+        <div className="border cursor-pointer rounded-xl shadow-md lg:max-w-sm  hover:scale-105 transition-all duration-700 overflow-hidden">
           <Link href={"https://next-13-deploy.vercel.app/products"} target="_blank">
 
             <Image src="/project/crud.png" className="w-full h-48 object-cover" alt="project1" width={1000} height={1000} />
