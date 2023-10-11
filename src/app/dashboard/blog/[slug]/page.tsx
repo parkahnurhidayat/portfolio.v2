@@ -34,7 +34,7 @@ const DetailBlog = async ({ params }: { params: { slug: string } }) => {
         <p className="tracking-wide leading-loose text-sm pt-10"  >{blogs?.data.body.paraf}</p>
       </div>
       <div className="py-4">
-        <img src={blogs?.data.code} className={blogs?.data.id === 2 ? "max-w-xl mx-auto" : ""} alt="blog" />
+        <img src={blogs?.data.code} className={blogs?.data.id === 2 ? "lg:max-w-xl mx-auto" : ""} alt="blog" />
         <div>
           {blogs?.data.id === 1 ? (
             <div>

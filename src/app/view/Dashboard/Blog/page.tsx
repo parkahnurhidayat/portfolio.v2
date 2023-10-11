@@ -13,7 +13,7 @@ const BlogPageView = async () => {
  const blogs = await data()
  
   return (
-    <div>
+    <div data-aos="fade-up">
       <div className="border-b pb-8 mb-7">
         <h1 className="text-3xl font-semibold pb-4">Blog</h1>
         <p className="text-slate-500 text-md">"I try to inspire and share knowledge through this blog.</p>
