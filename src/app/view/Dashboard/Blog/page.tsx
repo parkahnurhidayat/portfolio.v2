@@ -5,7 +5,7 @@ const data = async ()=>{
     const blog = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`,{cache:"no-store"})
     return blog.json()
   } catch (error) {
-    console.log(error)
+    
   }
 }
 

@@ -9,7 +9,7 @@ const BlogDetail = async (id: Number) => {
     });
     return data.json();
   } catch (error) {
-    console.log(error);
+    
   }
 };
 
