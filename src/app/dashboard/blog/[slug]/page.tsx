@@ -8,8 +8,7 @@ const BlogDetail = async (id: Number) => {
       cache: "no-store",
     });
     return data.json();
-  } catch (error) {
-    
+  } catch (error) { 
   }
 };
 

@@ -12,7 +12,6 @@ const data = async ()=>{
 const BlogPageView = async () => {
  const blogs = await data()
  
- 
   return (
     <div>
       <div className="border-b pb-8 mb-7">
