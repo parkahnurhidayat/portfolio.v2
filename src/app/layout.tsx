@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <head><link rel="icon" href="/profile/profile2.png" sizes="any" /></head>
       <body className={inter.className}>
        

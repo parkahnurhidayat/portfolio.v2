@@ -3,6 +3,8 @@ import { IconArticle, IconBrandGithub,  IconBrandInstagram, IconBrandLinkedin, I
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
+
+
 const SidebarPageView =()=>{
     const patchname = usePathname()
     const linkStyle ="flex scale-95 items-center px-4 py-1 group rounded-xl hover:bg-slate-100  hover:shadow-md link hover:scale-105 transition-all duration-500"
@@ -14,6 +16,7 @@ const SidebarPageView =()=>{
               <Image className="w-28 h-28 mb-3 rounded-full shadow-lg bg-top object-cover " src='/profile/profile2.png' alt="Profile" width={100} height={100} />
               <h5 className="mb-1 text-xl text-slate-900 font font-medium">Parkah Nurhidayat</h5>
               <span className="text-sm text-slate-500">Front End Dev 👋</span>
+              
             </div>
             <ul className="space-y-1 font-medium  border-y py-4" id="ul-nav" >
                 <li >

@@ -14,8 +14,6 @@ const BlogDetail = async (id: Number) => {
 
 const DetailBlog = async ({ params }: { params: { slug: string } }) => {
   const blogs = await BlogDetail(Number(params.slug));
-  
-
   return (
     <div>
       <div className="border-b pb-5">
