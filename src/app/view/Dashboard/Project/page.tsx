@@ -44,6 +44,22 @@ const ProjectPageView = () => {
           </Link>
         </div>
         <div className="border cursor-pointer rounded-xl shadow-md lg:max-w-sm  hover:scale-105 transition-all duration-700 overflow-hidden">
+          <Link href={"https://prayer-schedule.vercel.app/"} target="_blank">
+
+            <Image src="/project/jadwal.png" className="w-full h-48 object-cover" alt="project1" width={1000} height={1000} />
+            <div className="p-5">
+              <h2 className="text-md text-slate-800 uppercase pt-5 pb-2">Prayer Schedule</h2>
+              <p className="text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, atque.</p>
+              <div className="flex gap-x-4 pt-5">
+                <Image src="/asset/Tailwind CSS.png" width={25} height={25} alt="tech" className="hover:scale-125 transition-all duration-500 cursor-pointer" />
+                <Image src="/asset/Javascript.png" width={25} height={25} alt="tech" className="hover:scale-125 transition-all duration-500 cursor-pointer" />
+                <Image src="/asset/Vite.js.png" width={25} height={25} alt="tech" className="hover:scale-125 transition-all duration-500 cursor-pointer" />
+                <Image src="/asset/React.png" width={25} height={25} alt="tech" className="hover:scale-125 transition-all duration-500 cursor-pointer" />
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="border cursor-pointer rounded-xl shadow-md lg:max-w-sm  hover:scale-105 transition-all duration-700 overflow-hidden">
           <Link href={"https://next-13-deploy.vercel.app/products"} target="_blank">
 
             <Image src="/project/crud.png" className="w-full h-48 object-cover" alt="project1" width={1000} height={1000} />
